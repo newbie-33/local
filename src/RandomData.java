@@ -11,14 +11,15 @@ import java.util.Random;
 import javax.swing.*;
 
 public class RandomData extends JFrame {
-	JButton button2=new JButton("Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-	JButton button3=new JButton("ï¿½é²¢ï¿½ï¿½ï¿½ï¿½");
-	JButton button4=new JButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-	JButton button5=new JButton("Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-	JButton button6=new JButton("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
-	JLabel labels=new  JLabel("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£º");
+	JButton button1=new JButton("Ñ¡ÔñÅÅÐò");
+	JButton button2=new JButton("Ï£¶ûÅÅÐò");
+	JButton button3=new JButton("¹é²¢ÅÅÐò");
+	JButton button4=new JButton("²åÈëÅÅÐò");
+	JButton button5=new JButton("Ã°ÅÝÅÅÐò");
+	JButton button6=new JButton("¿ìËÙÅÅÐò");
+	JLabel labels=new  JLabel("³ÌÐòÔËÐÐÊ±¼ä£º");
 	JLabel labelj=new  JLabel();
-	JLabel label=new  JLabel("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½");
+	JLabel label=new  JLabel("ÇëÊäÈëÉú³ÉÊýµÄ¸öÊý£º");
 	JTextField field=new JTextField(12);	
 	JTextArea text=new JTextArea(10,20);
 	JScrollPane jsp1=new JScrollPane(text);
@@ -33,24 +34,24 @@ public class RandomData extends JFrame {
 		init();
 	}
 	void init() {
-		button1.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		button2.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		button3.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		button4.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		button5.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		button6.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		label.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		labels.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		labelj.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		field.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,22));
-		text.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,18));
-		text1.setFont(new Font("ï¿½ï¿½ï¿½ï¿½",1,18));
+		button1.setFont(new Font("ËÎÌå",1,22));
+		button2.setFont(new Font("ËÎÌå",1,22));
+		button3.setFont(new Font("ËÎÌå",1,22));
+		button4.setFont(new Font("ËÎÌå",1,22));
+		button5.setFont(new Font("ËÎÌå",1,22));
+		button6.setFont(new Font("ËÎÌå",1,22));
+		label.setFont(new Font("ËÎÌå",1,22));
+		labels.setFont(new Font("ËÎÌå",1,22));
+		labelj.setFont(new Font("ËÎÌå",1,22));
+		field.setFont(new Font("ËÎÌå",1,22));
+		text.setFont(new Font("ËÎÌå",1,18));
+		text1.setFont(new Font("ËÎÌå",1,18));
 		JPanel panel1=new JPanel();
 		JPanel panel2=new JPanel();
 		JPanel panel3=new JPanel();
 		JPanel panel4=new JPanel();
 		JPanel panel5=new JPanel();
-		Box box1=Box.createVerticalBox();//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½
+		Box box1=Box.createVerticalBox();//ÉùÃ÷ÁÐÊ½ºÐ
 			
 		button1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
@@ -128,18 +129,18 @@ public class RandomData extends JFrame {
 		if(field.getText().matches(regex1)) {						
 			int N=Integer.parseInt(field.getText());
 			if(N<1) {
-				JOptionPane.showMessageDialog(null,"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½Ê¾",JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null,"ÊäÈë´íÎó£¬ÇëÖØÐÂÊäÈë","ÌáÊ¾",JOptionPane.ERROR_MESSAGE);
 			}
 			else {
 				
 				int shuzu[]=new int[N];
 				
-				text1.setText("");//ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½			
+				text1.setText("");//Çå¿ÕÎÄ±¾Çø			
 				for(int x=0;x<shuzu.length;x++) {
 					int s=r.nextInt(100000);
 					shuzu[x]=s;
-					String str1=Integer.toString(shuzu[x]);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
-					text1.append(str1+"\n");//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åµï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+					String str1=Integer.toString(shuzu[x]);//Êý×éÕûÐÎ×ª»¯³É×Ö·ûÐÍ
+					text1.append(str1+"\n");//°ÑÊý×é·Åµ½ÎÄ±¾Çø
 											
 					out1.write(str1);		
 					out1.write("    ");
@@ -163,13 +164,13 @@ public class RandomData extends JFrame {
 				long end1 = System.currentTimeMillis();
 				long time = end1-start1;
 				String sR=Long.toString(time);
-				labelj.setText(sR+"ï¿½ï¿½ï¿½ï¿½");
+				labelj.setText(sR+"ºÁÃë");
 				
-				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-				text.setText("");//ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½				
+				//Êä³öÅÅÐòºóµÄÊý×é
+				text.setText("");//Çå¿ÕÎÄ±¾Çø				
 				for(int x=0;x<arr.length;x++) {							
-					String str1=Integer.toString(arr[x]);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
-					text.append(str1+"\n");//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åµï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+					String str1=Integer.toString(arr[x]);//Êý×éÕûÐÎ×ª»¯³É×Ö·ûÐÍ
+					text.append(str1+"\n");//°ÑÊý×é·Åµ½ÎÄ±¾Çø
 					
 						out2.write(str1);
 						out2.write("    ");
@@ -179,7 +180,7 @@ public class RandomData extends JFrame {
 		}
 		
 		else {
-			JOptionPane.showMessageDialog(null,"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½Ê¾",JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null,"ÊäÈë´íÎó£¬ÇëÖØÐÂÊäÈë","ÌáÊ¾",JOptionPane.ERROR_MESSAGE);
 		}
 	}
 		catch (IOException e) {				
@@ -187,7 +188,7 @@ public class RandomData extends JFrame {
 		}
 	
 }
-	//Ö±ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò·½·ï¿½
+	//Ö±½Ó²åÈëÅÅÐò·½·¨
 	public void InsertSort(int[] arrays) {
 		int[] arr=arrays;
 		for(int i=1;i<arr.length;i++) {
@@ -199,7 +200,7 @@ public class RandomData extends JFrame {
 		}
 	}
 	
-	//Ö±ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ò·½·ï¿½
+	//Ö±½ÓÑ¡ÔñÅÅÐò·½·¨
 	public void SelectSort(int[] arrays) {
 		int[] arr=arrays;
 		int temp = 0;
@@ -214,7 +215,7 @@ public class RandomData extends JFrame {
 		}
 	}
 	
-	//Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ò·½·ï¿½
+	//Ã°ÅÝÅÅÐò·½·¨
 	public void BubbleSort(int[] arrays) {
 		int[] arr=arrays;
 		for(int i=1;i<arr.length;i++) {
@@ -228,7 +229,7 @@ public class RandomData extends JFrame {
 		}
 	}
 	
-	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò·½·ï¿½
+	//¿ìËÙÅÅÐò·½·¨
 	public void quickSort(int[] arrays,int begin,int end) {
 		int[] arr=arrays;
 		if(begin<end&&begin>=0&&end<=arr.length) {
@@ -254,7 +255,7 @@ public class RandomData extends JFrame {
 		}
 	}
 	
-	//Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ò·½·ï¿½
+	//Ï£¶ûÅÅÐò·½·¨
 	public void shellSort(int[] arrays){            
         int delta = arrays.length/2;
         for(delta=arrays.length/2;delta>0;delta/=2) {
@@ -269,13 +270,13 @@ public class RandomData extends JFrame {
         }		
     }
 	
-	//ï¿½é²¢ï¿½ï¿½ï¿½ò·½·ï¿½
+	//¹é²¢ÅÅÐò·½·¨
 	public static void mergesort(int[] a,int begin,int end){
         int mid = (begin+end)/2;
         if(begin<end){
             mergesort(a,begin,mid);
             mergesort(a,mid+1,end);
-            //ï¿½ï¿½ï¿½Ò¹é²¢
+            //×óÓÒ¹é²¢
             merge(a,begin,mid,end);
         }
     }
@@ -284,7 +285,7 @@ public class RandomData extends JFrame {
         int i= begin;
         int j = mid+1;
         int k=0;
-        // ï¿½Ñ½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // °Ñ½ÏÐ¡µÄÊýÏÈÒÆµ½ÐÂÊý×éÖÐ
         while(i<=mid && j<=end){
             if(a[i]<a[j]){
                 temp[k++] = a[i++];
@@ -293,15 +294,15 @@ public class RandomData extends JFrame {
                 temp[k++] = a[j++];
             }
         }
-        // ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+        // °Ñ×ó±ßÊ£ÓàµÄÊýÒÆÈëÊý×é 
         while(i<=mid){
             temp[k++] = a[i++];
         }
-        // ï¿½ï¿½ï¿½Ò±ï¿½Ê£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // °ÑÓÒ±ßÊ£ÓàµÄÊýÒÆÈëÊý×é
         while(j<=end){
             temp[k++] = a[j++];
         }
-        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½numsï¿½ï¿½ï¿½ï¿½
+        // °ÑÐÂÊý×éÖÐµÄÊý¸²¸ÇnumsÊý×é
         for(int x=0;x<temp.length;x++){
             a[x+begin] = temp[x];
         }
@@ -310,11 +311,11 @@ public class RandomData extends JFrame {
 	
 	public static void main(String[] args) {
 		RandomData win=new RandomData();
-		win.setTitle("ï¿½ï¿½ï¿½ï¿½ÏµÍ³");
+		win.setTitle("ÅÅÐòÏµÍ³");
 		win.setSize(800,430);
-		win.setLocationRelativeTo(null);//ï¿½ï¿½ï¿½Ú¾ï¿½ï¿½ï¿½
-		win.setResizable(false);//ï¿½ï¿½ï¿½Ú´ï¿½Ð¡ï¿½ï¿½ï¿½É¸Ä±ï¿½
-		win.setVisible(true);//ï¿½ï¿½ï¿½Ú¿É¼ï¿½
+		win.setLocationRelativeTo(null);//´°¿Ú¾ÓÖÐ
+		win.setResizable(false);//´°¿Ú´óÐ¡²»¿É¸Ä±ä
+		win.setVisible(true);//´°¿Ú¿É¼û
 		win.setLayout(new FlowLayout());
 		win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
